@@ -67,6 +67,10 @@ ul {
     list-style: none;
 }
 
+.icon {
+  filter: brightness(0) invert(1);
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -94,10 +98,34 @@ header {
 .sidebar {
     background-color: #0384fc;
     display: grid;
-    grid-template-rows: 50px 170px 90px;
-    gap: 45px;
+    grid-template-rows: repeat(3, auto);
+    align-items: start;
+    justify-items: start;
+    gap: 15px;
     color: white;
     grid-area: 1 / 1 / 3 / 2;
+}
+
+.sidebar > * {
+  align-self: start;
+}
+
+.icon-text-grid {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.icon-text-grid img {
+  justify-self: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .content {
