@@ -59,6 +59,10 @@ body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.small-text {
+  font-size: .8rem;
+}
+
 ul {
     list-style: none;
 }
@@ -126,4 +130,15 @@ header {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-list {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  flex: 1;
 }
